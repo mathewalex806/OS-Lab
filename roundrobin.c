@@ -24,7 +24,6 @@ void RoundRobin(struct Process p1[], int no_process, int time)
     //Iterating through the array
     while (count<no_process)
     {
-        flag = 0;
         for (int i=0; i<no_process; i++)
         {
             if (remain[i]>0)
@@ -46,8 +45,6 @@ void RoundRobin(struct Process p1[], int no_process, int time)
                 }
             }
         }
-        if (flag==0)
-        break;
     }
 
     float awt=0;
